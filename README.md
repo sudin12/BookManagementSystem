@@ -16,8 +16,13 @@ Create a new database for the project:
 
 sql
 Copy
-CREATE DATABASE bookdb;
+CREATE DATABASE book_management_system;
 Import the database schema
+CREATE TABLE books (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    isbn VARCHAR(13) UNIQUE NOT NULL
+);
 
 4. Configure Database Connection
 
